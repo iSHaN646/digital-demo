@@ -1,7 +1,5 @@
 const dotenv = require("dotenv").config()
-const BASE_URL = `http://localhost:${
-  process.env.PORT ? process.env.PORT : 4000
-}/api/v1` //deployed backend base url
+const BASE_URL = REACT_APP_BASE_URL || `http://localhost:4000/api/v1` //deployed backend base url
 
 // AUTH ENDPOINTS
 export const endpoints = {
