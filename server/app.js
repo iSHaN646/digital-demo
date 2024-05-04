@@ -12,7 +12,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const { cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
-require("dotenv").config();
+const dotenv = require("dotenv").config();
 
 // Loading environment variables from .env file
 // dotenv.config();
@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(cookieParser());
 // same port run -> after npm run build
 const path = require("path");
-const { loadEnvFile } = require("process");
+
 const _dirname = path.dirname("");
 const buildpath = path.join(_dirname, "../Frontend/build");
 app.use(express.static(buildpath));
