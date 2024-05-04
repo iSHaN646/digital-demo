@@ -30,7 +30,7 @@ app.use(cookieParser());
 const path = require("path");
 
 const _dirname = path.dirname("");
-const buildpath = path.join(_dirname, "../Frontend/build");
+const buildpath = path.join(_dirname, "../build");
 app.use(express.static(buildpath));
 app.use(
   cors({
