@@ -5,8 +5,8 @@ import { Toaster } from "react-hot-toast"
 import { Provider } from "react-redux"
 import { BrowserRouter } from "react-router-dom"
 
-import App from "."
-// import App from "./app"
+// import App from "."
+import App from "./App"
 import rootReducer from "./reducer"
 
 const store = configureStore({
