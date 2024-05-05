@@ -1,5 +1,5 @@
 require("dotenv").config()
-const BASE_URL = process.env.REACT_APP_BASE_URL
+const BASE_URL = `http://100.20.92.101:${process.env.PORT}/api/v1`
 
 // AUTH ENDPOINTS
 export const endpoints = {
