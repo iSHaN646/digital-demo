@@ -1,9 +1,7 @@
-const mongoose = require("mongoose");
-const dotenv = require("dotenv").config();
+const mongoose = require("mongoose")
+require("dotenv").config()
 
-const MONGO_URL =
-  process.env.MONGODB_URL ||
-  "mongodb+srv://ishan-gupta:jee@cluster0.kzaozei.mongodb.net/EDtech";
+const MONGO_URL = process.env.MONGODB_URL
 exports.connect = () => {
   mongoose
     .connect(MONGO_URL, {
@@ -12,8 +10,8 @@ exports.connect = () => {
     })
     .then(console.log(`DB Connection Success,${MONGO_URL}`))
     .catch((err) => {
-      console.log(`DB Connection Failed`);
-      console.log(err);
-      process.exit(1);
-    });
-};
+      console.log(`DB Connection Failed`)
+      console.log(err)
+      process.exit(1)
+    })
+}
